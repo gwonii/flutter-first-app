@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: StreamBuilder<String?>(
         stream: cubit.stream,
-        builder: (_, snapshot) {
+        builder: (context, snapshot) {
           final button = TextButton(
             onPressed: () => cubit.pickRandomName(),
             child: const Text('Pick a random name'),
