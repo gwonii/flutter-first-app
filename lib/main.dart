@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'listView.dart';
+import 'bloc_sample.dart';
 
 void main() {
-  runApp(const ListViewApp());
+  runApp(const BlocSampleView());
 }
-
-
-

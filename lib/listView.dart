@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ListViewApp  extends StatelessWidget {
-  const ListViewApp ({Key? key}) : super(key: key);
+class ListViewApp extends StatelessWidget {
+  const ListViewApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home: ListViewPage()
-    );
+    return const MaterialApp(home: ListViewPage());
   }
 }
 
@@ -19,14 +17,7 @@ class ListViewPage extends StatefulWidget {
 }
 
 class _ListViewPageState extends State<ListViewPage> {
-
-  var titleList = [
-    'gwonii',
-    'dennis',
-    'norish',
-    'delish',
-    'jinu'
-  ];
+  var titleList = ['gwonii23', 'dennis', 'norish', 'delish', 'jinu'];
 
   var imageList = [
     'Resources/profile_1.png',
@@ -58,9 +49,9 @@ class _ListViewPageState extends State<ListViewPage> {
       ),
       body: ListView.builder(
           itemCount: titleList.length,
-          itemBuilder: (context, index){
+          itemBuilder: (context, index) {
             return GestureDetector(
-              onTap: (){
+              onTap: () {
                 debugPrint(titleList[index]);
               },
               child: Card(
@@ -80,8 +71,7 @@ class _ListViewPageState extends State<ListViewPage> {
                             style: const TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.grey
-                            ),
+                                color: Colors.grey),
                           ),
                           const SizedBox(
                             height: 10,
@@ -91,9 +81,7 @@ class _ListViewPageState extends State<ListViewPage> {
                             child: Text(
                               description[index],
                               style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.grey[500]
-                              ),
+                                  fontSize: 15, color: Colors.grey[500]),
                             ),
                           )
                         ],
@@ -103,8 +91,7 @@ class _ListViewPageState extends State<ListViewPage> {
                 ),
               ),
             );
-          }
-      ),
+          }),
     );
   }
 }
