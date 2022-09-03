@@ -21,24 +21,6 @@
             "type": "dart",
             "deviceId": "B9125E80-0C32-4289-95D2-FCE13A464B93"
         }
-        // ,
-        // {
-        //     "name": "StudioProjects",
-        //     "request": "launch",
-        //     "type": "dart",
-        // },
-        // {
-        //     "name": "StudioProjects (profile mode)",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "profile"
-        // },
-        // {
-        //     "name": "StudioProjects (release mode)",
-        //     "request": "launch",
-        //     "type": "dart",
-        //     "flutterMode": "release"
-        // }
     ],
     "compounds": [
         {
