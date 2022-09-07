@@ -23,7 +23,14 @@ class _StreamSampleState extends State<StreamSample> {
         builder: (context, snapshot) {
           final priceNumber = snapshot.data.toString();
           return Center(
-            child: Text(priceNumber),
+            child: Text(
+              priceNumber,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 40,
+                color: Colors.black,
+              ),
+            ),
           );
         },
       ),
